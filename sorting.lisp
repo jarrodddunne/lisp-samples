@@ -17,7 +17,7 @@
 (defun rand-list (max-int length)
   (repeat (lambda () (floor (random max-int))) length))
 
-; Reutnrs the array sorted using insertion sort
+; Returns the array sorted using insertion sort
 (defun insertion-sort (arr)
   (if (eq nil arr)
     nil
