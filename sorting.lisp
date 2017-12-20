@@ -88,7 +88,7 @@
 ; Gets a random pivot element from an list
 (defun get-pivot (lst)
   (let ((idx (floor (random (list-length lst)))))
-    (car (nthcdr idx lst))))
+    (nth idx lst)))
 
 ; Returns a (left-lst right-lst) pivoted on pivot, without the first pivot element
 (defun pivot-lst (lst pivot left right)
